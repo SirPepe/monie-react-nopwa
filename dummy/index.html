@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Monie</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
+<body class="loaded">
+
+<header class="header">
+  <div class="container">
+    <h1>Monie <span>- Exchange Rate Calculator PWA</span></h1>
+    <p><a class="refresh">↻ <span>Refresh rates</span></a></p>
+  </div>
+</header>
+
+<main class="main container">
+  <section class="currency">
+    <h2><b>Travel</b> currency</h2>
+    <select class="currency__select currency__select--travel"><option value="AUD">Australian dollar (AUD)</option><option value="BGN">Bulgarian lev (BGN)</option><option value="BRL">Brazilian real (BRL)</option><option value="CAD">Canadian dollar (CAD)</option><option value="CHF">Swiss franc (CHF)</option><option value="CNY">Chinese yuan (CNY)</option><option value="CZK">Czech koruna (CZK)</option><option value="DKK">Danish krone (DKK)</option><option value="EUR">Euro (EUR)</option><option selected value="GBP">Pound sterling (GBP)</option><option value="HKD">Hong Kong dollar (HKD)</option><option value="HRK">Croatian kuna (HRK)</option><option value="HUF">Hungarian forint (HUF)</option><option value="IDR">Indonesian rupiah (IDR)</option><option value="ILS">Israeli new shekel (ILS)</option><option value="INR">Indian rupee (INR)</option><option value="JPY">Japanese yen (JPY)</option><option value="KRW">South Korean won (KRW)</option><option value="MXN">Mexican peso (MXN)</option><option value="MYR">Malaysian ringgit (MYR)</option><option value="NOK">Norwegian krone (NOK)</option><option value="NZD">New Zealand dollar (NZD)</option><option value="PHP">Philippine peso (PHP)</option><option value="PLN">Polish złoty (PLN)</option><option value="RON">Romanian leu (RON)</option><option value="RUB">Russian ruble (RUB)</option><option value="SEK">Swedish krona (SEK)</option><option value="SGD">Singapore dollar (SGD)</option><option value="THB">Thai baht (THB)</option><option value="TRY">Turkish lira (TRY)</option><option value="USD">United States dollar (USD)</option><option value="ZAR">South African rand (ZAR)</option></select>
+  </section>
+  <section class="currency">
+    <h2><b>Home</b> currency</h2>
+    <select class="currency__select currency__select--home"><option value="AUD">Australian dollar (AUD)</option><option value="BGN">Bulgarian lev (BGN)</option><option value="BRL">Brazilian real (BRL)</option><option value="CAD">Canadian dollar (CAD)</option><option value="CHF">Swiss franc (CHF)</option><option value="CNY">Chinese yuan (CNY)</option><option value="CZK">Czech koruna (CZK)</option><option value="DKK">Danish krone (DKK)</option><option selected value="EUR">Euro (EUR)</option><option value="GBP">Pound sterling (GBP)</option><option value="HKD">Hong Kong dollar (HKD)</option><option value="HRK">Croatian kuna (HRK)</option><option value="HUF">Hungarian forint (HUF)</option><option value="IDR">Indonesian rupiah (IDR)</option><option value="ILS">Israeli new shekel (ILS)</option><option value="INR">Indian rupee (INR)</option><option value="JPY">Japanese yen (JPY)</option><option value="KRW">South Korean won (KRW)</option><option value="MXN">Mexican peso (MXN)</option><option value="MYR">Malaysian ringgit (MYR)</option><option value="NOK">Norwegian krone (NOK)</option><option value="NZD">New Zealand dollar (NZD)</option><option value="PHP">Philippine peso (PHP)</option><option value="PLN">Polish złoty (PLN)</option><option value="RON">Romanian leu (RON)</option><option value="RUB">Russian ruble (RUB)</option><option value="SEK">Swedish krona (SEK)</option><option value="SGD">Singapore dollar (SGD)</option><option value="THB">Thai baht (THB)</option><option value="TRY">Turkish lira (TRY)</option><option value="USD">United States dollar (USD)</option><option value="ZAR">South African rand (ZAR)</option></select>
+  </section>
+</main>
+
+<div class="result container">
+  <section class="amount amount--travel">
+    <input type="number" min="0" value="1" class="amount__input--travel">
+    <span class="amount__currency--travel">GBP</span>&nbsp;=
+  </section>
+  <section class="amount amount--home">
+    <span class="amount__output--home">1.14</span>
+    <span class="amount__currency--home">EUR</span>
+  </section>
+</div>
+
+</body>
+</html>
