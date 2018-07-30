@@ -110,12 +110,12 @@ input:focus, select:focus {
   border: 0.1rem solid var(--border-color);
   box-shadow: var(--box-shadow);
   position: relative;
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity 400ms;
 }
-body.loaded .main {
+/* body.loaded .main {
   opacity: 1;
-}
+} */
 .currency {
   flex: 1 1 0;
 }
@@ -152,12 +152,12 @@ body.loaded .main {
   margin-top: 2rem;
   padding: 0 1.25rem;
   display: flex;
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity 400ms;
 }
-body.loaded .result {
+/* body.loaded .result {
   opacity: 1;
-}
+} */
 .result section {
   flex: 1 1 50%;
   position: relative;
