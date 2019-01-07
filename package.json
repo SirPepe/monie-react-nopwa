@@ -9,8 +9,8 @@
   "repository": {},
   "author": "peter@peterkroener.de",
   "scripts": {
-    "build": "cp -r src/api dist/api && parcel build src/index.html --no-cache",
-    "watch": "cp -r src/api dist/api && parcel src/index.html --no-cache"
+    "build": "cp -r src/api dist/api && parcel build src/index.html --no-cache --public-url '.'",
+    "watch": "cp -r src/api dist/api && parcel src/index.html --no-cache --public-url '.'"
   },
   "license": "MIT",
   "dependencies": {
