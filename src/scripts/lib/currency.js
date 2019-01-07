@@ -58,7 +58,7 @@ export const convertRelative = (rates, from, to, base = "EUR") => {
 // Get latest currency exchange rates
 export const getRates = async () => {
   // add some latency for fun
-  const latency = Math.random() * (1000 - 500) + 500;
+  const latency = Math.random() * 500 + 500;
   await new Promise( (res) => setTimeout(res, latency) );
   const response = await fetch("api/latest.json");
   if (response.ok) {

@@ -1,26 +1,24 @@
 {
   "name": "monie-react-nopwa",
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version"
+  ],
   "version": "0.0.0",
   "main": "src/index.js",
   "repository": {},
   "author": "peter@peterkroener.de",
   "scripts": {
-    "build": "npx webpack",
-    "watch": "npx webpack-dev-server"
+    "build": "cp -r src/api dist/api && parcel build src/index.html --no-cache",
+    "watch": "cp -r src/api dist/api && parcel src/index.html --no-cache"
   },
   "license": "MIT",
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-es2017": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "redux": "^3.7.2",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1",
-    "webpack-notifier": "^1.5.1"
+    "parcel-bundler": "^1.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-promise": "^0.6.0"
   }
 }
